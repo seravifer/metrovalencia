@@ -1,0 +1,323 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="apple-touch-icon" href="img/logo.png" />
+    <link rel="icon" href="img/logo.png">
+    <title>Metrovalencia</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/latest/js.cookie.min.js"></script>
+    <script type="text/javascript" src="content.js"></script>
+</head>
+<body>
+    <div class="logo"><img src="img/logo-metrovalencia.png"></div>
+
+    <main role="main" class="app">
+
+        <section id="schedule">
+            <div id="info"></div>
+            <div id="timetable"></div>
+        </section>
+
+        <section id="home">
+            <form name="form" id="form" action="" method="post">
+                <div class="card">
+                    <i class="material-icons">train</i><i class="material-icons">keyboard_arrow_right</i>
+                    <select name="selectOrigen" id="selectOrigen">
+                                    <option value="0">Elige parada</option>
+                                    <option value="121">Aeroport</option>
+                                    <option value="14">Alameda</option>
+                                    <option value="5">Albalat dels Sorells</option>
+                                    <option value="36">Alberic</option>
+                                    <option value="10">Alboraya-Palmaret</option>
+                                    <option value="9">Alboraya-Peris Aragó</option>
+                                    <option value="128">Alfauir</option>
+                                    <option value="43">Alginet</option>
+                                    <option value="8">Almàssera</option>
+                                    <option value="23">Amistat-Casa de Salud</option>
+                                    <option value="17">Àngel Guimerà</option>
+                                    <option value="24">Aragón</option>
+                                    <option value="42">Ausiàs March</option>
+                                    <option value="18">Av. del Cid</option>
+                                    <option value="22">Ayora</option>
+                                    <option value="109">Bailén</option>
+                                    <option value="107">Bétera</option>
+                                    <option value="69">Benaguasil 1r</option>
+                                    <option value="70">Benaguasil 2n</option>
+                                    <option value="97">Benicalap</option>
+                                    <option value="54">Beniferri</option>
+                                    <option value="12">Benimaclet</option>
+                                    <option value="57">Benimàmet</option>
+                                    <option value="40">Benimodo</option>
+                                    <option value="72">Burjassot</option>
+                                    <option value="73">Burjassot - Godella</option>
+                                    <option value="59">Campament</option>
+                                    <option value="53">Campanar</option>
+                                    <option value="103">Campus</option>
+                                    <option value="56">Canterería</option>
+                                    <option value="41">Carlet</option>
+                                    <option value="15">Colón</option>
+                                    <option value="50">Col·legi El Vedat</option>
+                                    <option value="83">Dr. Lluch</option>
+                                    <option value="108">El Clot</option>
+                                    <option value="55">Empalme</option>
+                                    <option value="65">Entrepins</option>
+                                    <option value="45">Espioca</option>
+                                    <option value="130">Estadi del Llevant</option>
+                                    <option value="81">Eugenia Viñes</option>
+                                    <option value="13">Facultats</option>
+                                    <option value="200">Faitanar</option>
+                                    <option value="106">Fira València</option>
+                                    <option value="99">Florista</option>
+                                    <option value="6">Foios</option>
+                                    <option value="44">Font Almaguer</option>
+                                    <option value="122">Francesc Cubells</option>
+                                    <option value="62">Fuente del Jarro</option>
+                                    <option value="98">Garbí</option>
+                                    <option value="74">Godella</option>
+                                    <option value="123">Grau - Canyamelar</option>
+                                    <option value="80">Horta Vella</option>
+                                    <option value="25">Jesús</option>
+                                    <option value="39">L'Alcúdia</option>
+                                    <option value="67">L'Eliana</option>
+                                    <option value="85">La Cadena</option>
+                                    <option value="63">La Canyada</option>
+                                    <option value="88">La Carrasca</option>
+                                    <option value="111">La Coma</option>
+                                    <option value="183">La Cova</option>
+                                    <option value="101">La Granja</option>
+                                    <option value="84">La Marina</option>
+                                    <option value="2">La Pobla de Farnals</option>
+                                    <option value="68">La Pobla de Vallbona</option>
+                                    <option value="184">La Presa</option>
+                                    <option value="64">La Vallesa</option>
+                                    <option value="82">Les Arenes</option>
+                                    <option value="58">Les Carolines/Fira</option>
+                                    <option value="114">Ll. Llarga - Terramelar</option>
+                                    <option value="71">Llíria</option>
+                                    <option value="11">Machado</option>
+                                    <option value="119">Manises</option>
+                                    <option value="115">Marítim - Serrería</option>
+                                    <option value="126">Marina Reial Joan Carles I</option>
+                                    <option value="95">Marxalenes</option>
+                                    <option value="110">Mas del Rosari</option>
+                                    <option value="185">Masia de Traver</option>
+                                    <option value="79">Masies</option>
+                                    <option value="37">Massalavés</option>
+                                    <option value="3">Massamagrell</option>
+                                    <option value="76">Massarrojos</option>
+                                    <option value="127">Mediterrani</option>
+                                    <option value="7">Meliana</option>
+                                    <option value="20">Mislata</option>
+                                    <option value="21">Mislata - Almassil</option>
+                                    <option value="77">Moncada - Alfara</option>
+                                    <option value="66">Montesol</option>
+                                    <option value="38">Montortal</option>
+                                    <option value="4">Museros</option>
+                                    <option value="19">Nou d'Octubre</option>
+                                    <option value="46">Omet</option>
+                                    <option value="129">Orriols</option>
+                                    <option value="31">Paiporta</option>
+                                    <option value="100">Palau de Congressos</option>
+                                    <option value="60">Paterna</option>
+                                    <option value="26">Patraix</option>
+                                    <option value="32">Picanya</option>
+                                    <option value="47">Picassent</option>
+                                    <option value="51">Pl. Espanya</option>
+                                    <option value="92">Pont de Fusta</option>
+                                    <option value="91">Primado Reig</option>
+                                    <option value="117">Quart de Poblet</option>
+                                    <option value="1">Rafelbunyol</option>
+                                    <option value="49">Realón</option>
+                                    <option value="94">Reus</option>
+                                    <option value="186">Riba-roja de Túria</option>
+                                    <option value="75">Rocafort</option>
+                                    <option value="120">Rosas</option>
+                                    <option value="27">Safranar</option>
+                                    <option value="93">Sagunt</option>
+                                    <option value="118">Salt de l'Aigua</option>
+                                    <option value="28">Sant Isidre</option>
+                                    <option value="102">Sant Joan</option>
+                                    <option value="131">Sant Miquel dels Reis</option>
+                                    <option value="48">Sant Ramón</option>
+                                    <option value="113">Santa Gemma - Parc Científic UV</option>
+                                    <option value="61">Santa Rita</option>
+                                    <option value="78">Seminari - CEU</option>
+                                    <option value="86">Serrería</option>
+                                    <option value="87">Tarongers</option>
+                                    <option value="52">Túria</option>
+                                    <option value="112">Tomás y Valiente</option>
+                                    <option value="201">Torre del Virrei</option>
+                                    <option value="33">Torrent</option>
+                                    <option value="34">Torrent Avinguda</option>
+                                    <option value="132">Tossal del Rei</option>
+                                    <option value="96">Trànsits</option>
+                                    <option value="105">TVV</option>
+                                    <option value="89">Universitat Politècnica</option>
+                                    <option value="30">València Sud</option>
+                                    <option value="104">Vicent Andrés Estellés</option>
+                                    <option value="90">Vicente Zaragozá</option>
+                                    <option value="35">Villanueva de Castellón</option>
+                                    <option value="16">Xàtiva</option>
+                    </select>
+                </div>
+                <button type="button" id="invert" name="invert"><i class="material-icons">repeat</i></button>
+                <div class="card">
+                    <i class="material-icons">train</i><i class="material-icons">keyboard_arrow_left</i>
+                    <select name="selectDestination" id="selectDestination">
+                                    <option value="0">Elige parada</option>
+                                    <option value="121">Aeroport</option>
+                                    <option value="14">Alameda</option>
+                                    <option value="5">Albalat dels Sorells</option>
+                                    <option value="36">Alberic</option>
+                                    <option value="10">Alboraya-Palmaret</option>
+                                    <option value="9">Alboraya-Peris Aragó</option>
+                                    <option value="128">Alfauir</option>
+                                    <option value="43">Alginet</option>
+                                    <option value="8">Almàssera</option>
+                                    <option value="23">Amistat-Casa de Salud</option>
+                                    <option value="17">Àngel Guimerà</option>
+                                    <option value="24">Aragón</option>
+                                    <option value="42">Ausiàs March</option>
+                                    <option value="18">Av. del Cid</option>
+                                    <option value="22">Ayora</option>
+                                    <option value="109">Bailén</option>
+                                    <option value="107">Bétera</option>
+                                    <option value="69">Benaguasil 1r</option>
+                                    <option value="70">Benaguasil 2n</option>
+                                    <option value="97">Benicalap</option>
+                                    <option value="54">Beniferri</option>
+                                    <option value="12">Benimaclet</option>
+                                    <option value="57">Benimàmet</option>
+                                    <option value="40">Benimodo</option>
+                                    <option value="72">Burjassot</option>
+                                    <option value="73">Burjassot - Godella</option>
+                                    <option value="59">Campament</option>
+                                    <option value="53">Campanar</option>
+                                    <option value="103">Campus</option>
+                                    <option value="56">Canterería</option>
+                                    <option value="41">Carlet</option>
+                                    <option value="15">Colón</option>
+                                    <option value="50">Col·legi El Vedat</option>
+                                    <option value="83">Dr. Lluch</option>
+                                    <option value="108">El Clot</option>
+                                    <option value="55">Empalme</option>
+                                    <option value="65">Entrepins</option>
+                                    <option value="45">Espioca</option>
+                                    <option value="130">Estadi del Llevant</option>
+                                    <option value="81">Eugenia Viñes</option>
+                                    <option value="13">Facultats</option>
+                                    <option value="200">Faitanar</option>
+                                    <option value="106">Fira València</option>
+                                    <option value="99">Florista</option>
+                                    <option value="6">Foios</option>
+                                    <option value="44">Font Almaguer</option>
+                                    <option value="122">Francesc Cubells</option>
+                                    <option value="62">Fuente del Jarro</option>
+                                    <option value="98">Garbí</option>
+                                    <option value="74">Godella</option>
+                                    <option value="123">Grau - Canyamelar</option>
+                                    <option value="80">Horta Vella</option>
+                                    <option value="25">Jesús</option>
+                                    <option value="39">L'Alcúdia</option>
+                                    <option value="67">L'Eliana</option>
+                                    <option value="85">La Cadena</option>
+                                    <option value="63">La Canyada</option>
+                                    <option value="88">La Carrasca</option>
+                                    <option value="111">La Coma</option>
+                                    <option value="183">La Cova</option>
+                                    <option value="101">La Granja</option>
+                                    <option value="84">La Marina</option>
+                                    <option value="2">La Pobla de Farnals</option>
+                                    <option value="68">La Pobla de Vallbona</option>
+                                    <option value="184">La Presa</option>
+                                    <option value="64">La Vallesa</option>
+                                    <option value="82">Les Arenes</option>
+                                    <option value="58">Les Carolines/Fira</option>
+                                    <option value="114">Ll. Llarga - Terramelar</option>
+                                    <option value="71">Llíria</option>
+                                    <option value="11">Machado</option>
+                                    <option value="119">Manises</option>
+                                    <option value="115">Marítim - Serrería</option>
+                                    <option value="126">Marina Reial Joan Carles I</option>
+                                    <option value="95">Marxalenes</option>
+                                    <option value="110">Mas del Rosari</option>
+                                    <option value="185">Masia de Traver</option>
+                                    <option value="79">Masies</option>
+                                    <option value="37">Massalavés</option>
+                                    <option value="3">Massamagrell</option>
+                                    <option value="76">Massarrojos</option>
+                                    <option value="127">Mediterrani</option>
+                                    <option value="7">Meliana</option>
+                                    <option value="20">Mislata</option>
+                                    <option value="21">Mislata - Almassil</option>
+                                    <option value="77">Moncada - Alfara</option>
+                                    <option value="66">Montesol</option>
+                                    <option value="38">Montortal</option>
+                                    <option value="4">Museros</option>
+                                    <option value="19">Nou d'Octubre</option>
+                                    <option value="46">Omet</option>
+                                    <option value="129">Orriols</option>
+                                    <option value="31">Paiporta</option>
+                                    <option value="100">Palau de Congressos</option>
+                                    <option value="60">Paterna</option>
+                                    <option value="26">Patraix</option>
+                                    <option value="32">Picanya</option>
+                                    <option value="47">Picassent</option>
+                                    <option value="51">Pl. Espanya</option>
+                                    <option value="92">Pont de Fusta</option>
+                                    <option value="91">Primado Reig</option>
+                                    <option value="117">Quart de Poblet</option>
+                                    <option value="1">Rafelbunyol</option>
+                                    <option value="49">Realón</option>
+                                    <option value="94">Reus</option>
+                                    <option value="186">Riba-roja de Túria</option>
+                                    <option value="75">Rocafort</option>
+                                    <option value="120">Rosas</option>
+                                    <option value="27">Safranar</option>
+                                    <option value="93">Sagunt</option>
+                                    <option value="118">Salt de l'Aigua</option>
+                                    <option value="28">Sant Isidre</option>
+                                    <option value="102">Sant Joan</option>
+                                    <option value="131">Sant Miquel dels Reis</option>
+                                    <option value="48">Sant Ramón</option>
+                                    <option value="113">Santa Gemma - Parc Científic UV</option>
+                                    <option value="61">Santa Rita</option>
+                                    <option value="78">Seminari - CEU</option>
+                                    <option value="86">Serrería</option>
+                                    <option value="87">Tarongers</option>
+                                    <option value="52">Túria</option>
+                                    <option value="112">Tomás y Valiente</option>
+                                    <option value="201">Torre del Virrei</option>
+                                    <option value="33">Torrent</option>
+                                    <option value="34">Torrent Avinguda</option>
+                                    <option value="132">Tossal del Rei</option>
+                                    <option value="96">Trànsits</option>
+                                    <option value="105">TVV</option>
+                                    <option value="89">Universitat Politècnica</option>
+                                    <option value="30">València Sud</option>
+                                    <option value="104">Vicent Andrés Estellés</option>
+                                    <option value="90">Vicente Zaragozá</option>
+                                    <option value="35">Villanueva de Castellón</option>
+                                    <option value="16">Xàtiva</option>
+                </select>
+                </div>
+
+                <div class="card md">
+                    <i class="material-icons">date_range</i><input name="date" class="date" id="date">
+                    <i class="material-icons">access_time</i><input name="hora" class="hora" id="hora">
+                </div>
+
+                <button type="submit" id="calcular" name="calcular">Calcular</button>
+
+            </form>
+        </section>
+
+    </main>
+
+</body>
+</html>
