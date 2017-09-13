@@ -36,7 +36,7 @@ html, body {
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
     border-radius: 2px;
 }
-
+/*
 @-webkit-keyframes fade {
     0% {
         opacity: 0;
@@ -77,13 +77,13 @@ html, body {
 .app > *:target ~ * {
     display: none;
 }
-
+*/
 .card {
     background-color: white;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
     border-radius: 2px;
     margin: 10px;
-    padding: 8vh 5vw;
+    padding: 7vh 5vw;
 }
 
 .card.md {
@@ -101,6 +101,10 @@ input {
     margin-left: 4vw;
 }
 
+form {
+    margin-bottom: 0;
+}
+
 .material-icons {
     vertical-align: middle;
     font-size: 12vw!important;
@@ -110,4 +114,10 @@ input {
     position: absolute;
     left: 50vw;
     margin-top: -5vh;
+}
+
+#calcular {
+    margin: 0 10px;
+    height: 8vh;
+    width: -webkit-fill-available;
 }

@@ -1,9 +1,12 @@
 $(document).ready(function() {
-    
+    $("#main").dragend({
+        disabled : true
+    });
     $('#selectOrigen option[value="' + localStorage.getItem("cookieOrigen") + '"]').prop('selected', true);
     $('#selectDestination option[value="' + localStorage.getItem('cookieDestination') + '"]').prop('selected', true);
     $('#date').val(getDay());
     $('#hora').val(getTime());
+
     
     $('#selectOrigen').change(function() {
         localStorage.setItem("cookieOrigen", $(this).val());
@@ -18,8 +21,8 @@ $(document).ready(function() {
         $('#selectOrigen').val($('#selectDestination option:selected').val());
         $('#selectDestination').val(aux);
         
-        localStorage.setItem("cookieDestination",  $(this).val());
-        localStorage.setItem("cookieOrigen", $(this).val());
+        localStorage.setItem("cookieDestination",  $('#selectDestination').val());
+        localStorage.setItem("cookieOrigen", $('#selectOrigen').val());
     })
 
     $('#form').submit(function(event) {
@@ -36,15 +39,23 @@ $(document).ready(function() {
         };
 
         $.ajax({
-            url         : 'https://cors.now.sh/http://www.metrovalencia.es/horarios.mobi.php',
+            
+            url        : 'https://cors.now.sh/http://www.metrovalencia.es/horarios.mobi.php',
             type        : 'GET',
             data        : formData,
             encode      : true
+            
         }).done(function(data) {
+            
             parseData(data);
-            window.location.href = "#schedule";
+            $("#main").dragend({
+                scrollToPage : 2,
+                disabled : false
+            });
+
+            //window.location.href = "#schedule";
         }).fail(function() {
-            alert("Fail!");
+            alert("Algo ha fallado");
         })
         
         event.preventDefault();
