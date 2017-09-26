@@ -36,48 +36,7 @@ html, body {
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
     border-radius: 2px;
 }
-/*
-@-webkit-keyframes fade {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 0.5;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-@keyframes fade {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 0.5;
-    }
-    100% {
-        opacity: 1;
-    }
-}
 
-.app > * {
-    display: none;
-}
-
-.app > *:last-child {
-    display: block;
-}
-
-.app > *:target {
-    display: block;
-    -webkit-animation: fade 300ms linear 1;
-    animation: fade 300ms linear 1;
-}
-
-.app > *:target ~ * {
-    display: none;
-}
-*/
 .card {
     background-color: white;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
@@ -114,10 +73,12 @@ form {
     position: absolute;
     left: 50vw;
     margin-top: -5vh;
+    -webkit-appearance: none;
 }
 
 #calcular {
     margin: 0 10px;
     height: 8vh;
     width: -webkit-fill-available;
+    -webkit-appearance: none;
 }
