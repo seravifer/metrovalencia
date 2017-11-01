@@ -40,7 +40,7 @@ $(document).ready(function() {
 
         $.ajax({
             
-            url        : 'https://cors.now.sh/http://www.metrovalencia.es/horarios.mobi.php',
+            url        : 'https://cors-anywhere.herokuapp.com/http://www.metrovalencia.es/horarios.mobi.php',
             type        : 'GET',
             data        : formData,
             encode      : true
